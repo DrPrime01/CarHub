@@ -11,6 +11,23 @@
 	font-family: "Manrope", sans-serif;
 }
 
+.noScrollBar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.noScrollBar::-webkit-scrollbar {
+	display: none;
+}
+
+.noScrollBar::-webkit-scrollbar-thumb {
+	display: none;
+}
+
+.noScrollBar.white-scrollbar::-webkit-scrollbar-thumb {
+	display: none;
+}
+
 /* START: General styles */
 .max-width {
 	@apply max-w-[1440px] mx-auto;
@@ -78,7 +95,7 @@
 }
 
 .home__cars-wrapper {
-	@apply grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14;
+	@apply grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14;
 }
 
 .home__error-container {
